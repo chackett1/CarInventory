@@ -203,6 +203,8 @@
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -213,11 +215,19 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Admin\Web.config" />
+    <Content Include="Images\Thumbs.db" />
+    <Content Include="Images\Thumbs\Thumbs.db" />
+    <None Include="Properties\PublishProfiles\AutoTracker - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Images\logo.jpg" />
+    <Content Include="Images\Thumbs\car.jpg" />
+    <Content Include="Images\Thumbs\car2.jpg" />
     <Content Include="ProductDetails.aspx" />
     <Content Include="ProductList.aspx" />
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\bootstrap-original.js" />
+    <Content Include="Scripts\bootstrap.css" />
+    <Content Include="Scripts\bootstrap.min-original.js" />
+    <Content Include="Scripts\bootstrap.min.css" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -468,7 +478,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
