@@ -17,17 +17,14 @@ namespace CarInventory
             int productId;
             if (!String.IsNullOrEmpty(rawId) && int.TryParse(rawId, out productId))
             {
-                using (ShoppingCartActions usersAppointment = new ShoppingCartActions())
-                {
-                    usersAppointment.AddToCart(Convert.ToInt16(rawId));
-                }
-
+                
             }
             else
             {
                 Debug.Fail("ERROR : We should never get to AddToAppointemnt.aspx without a ProductId.");
                 throw new Exception("ERROR : It is illegal to load AddToAppointment.aspx without setting a ProductId.");
             }
+
             Response.Redirect("Appointment.aspx");
         }
     }

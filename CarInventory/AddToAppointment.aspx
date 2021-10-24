@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddToAppointment.aspx.cs" Inherits="CarInventory.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AddToAppointment.aspx.cs" Inherits="CarInventory.AddToAppointment" %>
 
 <!DOCTYPE html>
 

@@ -10,8 +10,7 @@
 
 namespace CarInventory
 {
-    public partial class AddToAppointment
-    {
+    public partial class AddToAppointment{
 
         /// <summary>
         /// form1 control.
