@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -217,6 +218,8 @@
     <Content Include="Admin\Web.config" />
     <Content Include="Images\Thumbs.db" />
     <Content Include="Images\Thumbs\Thumbs.db" />
+    <Content Include="Appointment.aspx" />
+    <Content Include="AddToAppointment.aspx" />
     <None Include="Properties\PublishProfiles\AutoTracker - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\logo.jpg" />
@@ -474,6 +477,20 @@
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Appointment.aspx.cs">
+      <DependentUpon>Appointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Appointment.aspx.designer.cs">
+      <DependentUpon>Appointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddToAppointment.aspx.cs">
+      <DependentUpon>AddToAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddToAppointment.aspx.designer.cs">
+      <DependentUpon>AddToAppointment.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

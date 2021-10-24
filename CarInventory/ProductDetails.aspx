@@ -14,12 +14,18 @@
                     </td>
                     <td>&nbsp;</td>  
                     <td style="vertical-align: top; text-align:left;">
+
                         <b>Description:</b><br /><%#:Item.Description %>
                         <br />
                         <span><b>Price:</b>&nbsp;<%#: String.Format("{0:c}", Item.UnitPrice) %></span>
                         <br />
                         <span><b>Product Number:</b>&nbsp;<%#:Item.ProductID %></span>
                         <br />
+                        <a href="/AddToCart.aspx?productID=<%#:Item.ProductID %>">               
+                                        <span class="ProductListItem">
+                                            <b>Schedule an Appointment<b>
+                                        </span>           
+                        </a>
                     </td>
                 </tr>
             </table>
