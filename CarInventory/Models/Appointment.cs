@@ -27,5 +27,6 @@ namespace CarInventory.Models
         [Display(Name = "Customer Message")]
         [StringLength(10000)]  
         public string CustomerMessage { get; set; }
+
     }
 }

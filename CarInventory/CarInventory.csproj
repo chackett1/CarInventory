@@ -219,7 +219,6 @@
     <Content Include="Images\Thumbs.db" />
     <Content Include="Images\Thumbs\Thumbs.db" />
     <Content Include="AppointmentPage.aspx" />
-    <Content Include="AddToAppointment.aspx" />
     <None Include="Properties\PublishProfiles\AutoTracker - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\logo.jpg" />
@@ -486,13 +485,6 @@
     </Compile>
     <Compile Include="AppointmentPage.aspx.designer.cs">
       <DependentUpon>AppointmentPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="AddToAppointment.aspx.cs">
-      <DependentUpon>AddToAppointment.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AddToAppointment.aspx.designer.cs">
-      <DependentUpon>AddToAppointment.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
