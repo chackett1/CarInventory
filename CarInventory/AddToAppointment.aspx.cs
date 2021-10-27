@@ -25,7 +25,7 @@ namespace CarInventory
                 throw new Exception("ERROR : It is illegal to load AddToAppointment.aspx without setting a ProductId.");
             }
 
-            Response.Redirect("Appointment.aspx");
+            Response.Redirect("AppointmentPage.aspx");
         }
     }
 }

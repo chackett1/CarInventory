@@ -9,6 +9,7 @@ namespace CarInventory.Models
         {
             GetCategories().ForEach(c => context.Categories.Add(c));
             GetProducts().ForEach(p => context.Products.Add(p));
+            GetAppointments().ForEach(z => context.Appointments.Add(z));
         }
 
         private static List<Category> GetCategories()
@@ -198,6 +199,23 @@ namespace CarInventory.Models
             };
 
             return products;
+        }
+
+        private static List<Appointment> GetAppointments()
+        {
+            var appointments = new List<Appointment> {
+                new Appointment
+                {
+                    AppointmentID = 1,
+                    CustomerName = "John Smith",
+                    CustomerEmail = "johnsmith@gmail.com",
+                    DesiredVehicle = "Ford Mustang 2021",
+                    CustomerMessage = "Please contact me, I'd love to book an appointment to view this car sometime next week."
+                },
+                
+            };
+
+            return appointments;
         }
     }
 }
