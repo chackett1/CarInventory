@@ -14,10 +14,5 @@
     </asp:GridView>
     <br />
     <table> 
-    <tr>
-      <td>
-        <!--Checkout Placeholder -->
-      </td>
-    </tr>
     </table>
 </asp:Content>

@@ -2,6 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Administration</h1>
     <hr />
+    <a runat="server" href="~/Admin/AdminAppointment">Appointments</a>
     <h3>Add Product:</h3>
     <table>
         <tr>
