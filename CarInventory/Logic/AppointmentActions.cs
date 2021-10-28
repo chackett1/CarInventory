@@ -28,16 +28,6 @@ namespace CarInventory.Logic
             // Success.
             return true;
         }
-
-        public void Dispose()
-        {
-            if (_db != null)
-            {
-                _db.Dispose();
-                _db = null;
-            }
-        }
-
         public List<Appointment> GetAppointments()
         {
             return _db.Appointments.ToList();
