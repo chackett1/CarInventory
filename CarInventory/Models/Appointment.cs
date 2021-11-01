@@ -28,5 +28,9 @@ namespace CarInventory.Models
         [StringLength(10000)]  
         public string CustomerMessage { get; set; }
 
+        [DataType(DataType.MultilineText)]
+        [Display(Name = "Comments")]
+        [StringLength(10000)]
+        public string EmployeeComment { get; set; }
     }
 }

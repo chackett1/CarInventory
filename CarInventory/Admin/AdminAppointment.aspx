@@ -9,10 +9,8 @@
         <asp:BoundField DataField="CustomerName" HeaderText="Customer Name" />   
         <asp:BoundField DataField="CustomerEmail" HeaderText="Email" /> 
         <asp:BoundField DataField="DesiredVehicle" HeaderText="Desired Vehicle(s)" />  
-        <asp:BoundField DataField="CustomerMessage" HeaderText="Message)" />   
+        <asp:BoundField DataField="CustomerMessage" HeaderText="Customer Message" /> 
+         <asp:BoundField DataField="AppointmentID" HtmlEncode="False" DataFormatString="<a target='_blank' href='AppointmentDetails.aspx?appointmentID={0}'>View/Add Comments</a>" />
         </Columns>    
     </asp:GridView>
-    <br />
-    <table> 
-    </table>
 </asp:Content>

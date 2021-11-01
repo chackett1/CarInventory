@@ -202,6 +202,7 @@
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Admin\AdminAppointment.aspx" />
+    <Content Include="Admin\AppointmentDetails.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
@@ -403,6 +404,13 @@
     </Compile>
     <Compile Include="Admin\AdminAppointment.aspx.designer.cs">
       <DependentUpon>AdminAppointment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AppointmentDetails.aspx.cs">
+      <DependentUpon>AppointmentDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AppointmentDetails.aspx.designer.cs">
+      <DependentUpon>AppointmentDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
