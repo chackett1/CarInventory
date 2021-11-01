@@ -14,7 +14,6 @@ namespace CarInventory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
             string appointmentAction = Request.QueryString["AppointmentAction"];
             if (appointmentAction == "success")
             {
@@ -25,7 +24,6 @@ namespace CarInventory
             {
                 LabelSubmitStatus.Text = "Error Submitting Form";
             }
-            */
         }
 
         protected void SubmitButton_Click(object sender, EventArgs e)
@@ -36,7 +34,6 @@ namespace CarInventory
             bool addSuccess = appointments.AddAppointment(Name.Text, Email.Text,
                 Vehicle.Text, Message.Text);
 
-            /*
             if (addSuccess)
             {
                 // Reload the page with Success Message
@@ -45,11 +42,10 @@ namespace CarInventory
             }
             else
             {
-                //string pageUrl = Request.Url.AbsoluteUri.Substring(0, Request.Url.AbsoluteUri.Count() - Request.Url.Query.Count());
-                //Response.Redirect(pageUrl + "?AppointmentAction=failure");
                 // Show Error Submitting Form Message
+                string pageUrl = Request.Url.AbsoluteUri.Substring(0, Request.Url.AbsoluteUri.Count() - Request.Url.Query.Count());
+                Response.Redirect(pageUrl + "?AppointmentAction=failure");
             }
-            */
         }
 
     }
