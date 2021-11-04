@@ -202,7 +202,12 @@
     <Content Include="AddToCart.aspx" />
     <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Admin\AdminAppointment.aspx" />
+    <Content Include="Admin\ApplyExpense.aspx" />
     <Content Include="Admin\AppointmentDetails.aspx" />
+    <Content Include="Admin\CreateAccount.aspx" />
+    <Content Include="Admin\History.aspx" />
+    <Content Include="Admin\Reports.aspx" />
+    <Content Include="Admin\SellCar.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-original.css" />
     <Content Include="Content\bootstrap-original.min.css" />
@@ -405,12 +410,47 @@
     <Compile Include="Admin\AdminAppointment.aspx.designer.cs">
       <DependentUpon>AdminAppointment.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\ApplyExpense.aspx.cs">
+      <DependentUpon>ApplyExpense.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ApplyExpense.aspx.designer.cs">
+      <DependentUpon>ApplyExpense.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\AppointmentDetails.aspx.cs">
       <DependentUpon>AppointmentDetails.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\AppointmentDetails.aspx.designer.cs">
       <DependentUpon>AppointmentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\CreateAccount.aspx.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\CreateAccount.aspx.designer.cs">
+      <DependentUpon>CreateAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\History.aspx.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\History.aspx.designer.cs">
+      <DependentUpon>History.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reports.aspx.designer.cs">
+      <DependentUpon>Reports.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SellCar.aspx.cs">
+      <DependentUpon>SellCar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SellCar.aspx.designer.cs">
+      <DependentUpon>SellCar.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

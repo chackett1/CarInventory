@@ -7,6 +7,24 @@
                 <h2><%: Page.Title %></h2>
             </hgroup>
 
+            <h2>Filter By Category</h2>
+            
+        <div id="CategoryMenu" style="text-align: center">       
+            <asp:ListView ID="categoryList"  
+                ItemType="CarInventory.Models.Category" 
+                runat="server"
+                SelectMethod="GetCategories" >
+                <ItemTemplate>
+                    <b style="font-size: large; font-style: normal">
+                        <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
+                        <%#: Item.CategoryName %>
+                        </a>
+                    </b>
+                </ItemTemplate>
+                <ItemSeparatorTemplate>  |  </ItemSeparatorTemplate>
+            </asp:ListView>
+        </div>
+
             <asp:ListView ID="productList" runat="server" 
                 DataKeyNames="ProductID" GroupItemCount="4"
                 ItemType="CarInventory.Models.Product" SelectMethod="GetProducts">

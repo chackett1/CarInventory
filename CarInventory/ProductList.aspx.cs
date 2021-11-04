@@ -26,5 +26,12 @@ namespace CarInventory
             }
             return query;
         }
+        public IQueryable<Category> GetCategories()
+        {
+            var _db = new CarInventory.Models.ProductContext();
+            IQueryable<Category> query = _db.Categories;
+            return query;
+        }
+
     }
 }

@@ -72,9 +72,41 @@ namespace CarInventory
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (HttpContext.Current.User.IsInRole("canEdit"))
+            if (HttpContext.Current.User.IsInRole("employee") || HttpContext.Current.User.IsInRole("manager"))
             {
                 adminLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("employee") || HttpContext.Current.User.IsInRole("manager"))
+            {
+                appointmentLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("employee") || HttpContext.Current.User.IsInRole("manager"))
+            {
+                expenseLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("employee") || HttpContext.Current.User.IsInRole("manager"))
+            {
+                sellLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("manager"))
+            {
+                reportsLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("manager"))
+            {
+                createAccountLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("manager"))
+            {
+                historyLink.Visible = true;
+            }
+            if (HttpContext.Current.User.IsInRole("manager"))
+            {
+                scheduleLink.Visible = false;
+            }
+            if (HttpContext.Current.User.IsInRole("manager"))
+            {
+                autoTrackerLink.Visible = false;
             }
         }
 

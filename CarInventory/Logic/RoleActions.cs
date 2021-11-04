@@ -27,9 +27,9 @@ namespace CarInventory.Logic
             var roleMgr = new RoleManager<IdentityRole>(roleStore);
 
             // Then, you create the "canEdit" role if it doesn't already exist.
-            if (!roleMgr.RoleExists("canEdit"))
+            if (!roleMgr.RoleExists("manager"))
             {
-                IdRoleResult = roleMgr.Create(new IdentityRole { Name = "canEdit" });
+                IdRoleResult = roleMgr.Create(new IdentityRole { Name = "manager" });
             }
 
             // Create a UserManager object based on the UserStore object and the ApplicationDbContext  
@@ -39,16 +39,41 @@ namespace CarInventory.Logic
             var userMgr = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
             var appUser = new ApplicationUser
             {
-                UserName = "superadmin@gmail.com",
-                Email = "superadmin@gmail.com"
+                UserName = "manager@gmail.com",
+                Email = "manager@gmail.com"
             };
             IdUserResult = userMgr.Create(appUser, "passwordFAU1?");
 
             // If the new "canEdit" user was successfully created, 
             // add the "canEdit" user to the "canEdit" role. 
-            if (!userMgr.IsInRole(userMgr.FindByEmail("superadmin@gmail.com").Id, "canEdit"))
+            if (!userMgr.IsInRole(userMgr.FindByEmail("manager@gmail.com").Id, "manager"))
             {
-                IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("superadmin@gmail.com").Id, "canEdit");
+                IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("manager@gmail.com").Id, "manager");
+            }
+
+            // Then, you create the "canEdit" role if it doesn't already exist.
+            if (!roleMgr.RoleExists("employee"))
+            {
+                IdRoleResult = roleMgr.Create(new IdentityRole { Name = "employee" });
+            }
+
+            // Create a UserManager object based on the UserStore object and the ApplicationDbContext  
+            // object. Note that you can create new objects and use them as parameters in
+            // a single line of code, rather than using multiple lines of code, as you did
+            // for the RoleManager object.
+            userMgr = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(context));
+            appUser = new ApplicationUser
+            {
+                UserName = "employee@gmail.com",
+                Email = "employee@gmail.com"
+            };
+            IdUserResult = userMgr.Create(appUser, "passwordFAU1?");
+
+            // If the new "canEdit" user was successfully created, 
+            // add the "canEdit" user to the "canEdit" role. 
+            if (!userMgr.IsInRole(userMgr.FindByEmail("employee@gmail.com").Id, "employee"))
+            {
+                IdUserResult = userMgr.AddToRole(userMgr.FindByEmail("employee@gmail.com").Id, "employee");
             }
         }
     }

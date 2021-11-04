@@ -5,6 +5,12 @@
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>
 
+    <h4>Employee username: employee@gmail.com</h4>
+    <h4>Employee password: passwordFAU1?</h4>
+    <br />
+    <h4>Manager username: manager@gmail.com</h4>
+    <h4>Manager password: passwordFAU1?</h4>
+
     <div class="row">
         <div class="col-md-8">
             <section id="loginForm">
