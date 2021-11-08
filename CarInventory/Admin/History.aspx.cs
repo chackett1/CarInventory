@@ -4,6 +4,11 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CarInventory.Models;
+using CarInventory.Logic;
+using System.Collections.Specialized;
+using System.Collections;
+using System.Web.ModelBinding;
 
 namespace CarInventory.Admin
 {
@@ -12,6 +17,12 @@ namespace CarInventory.Admin
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        public List<Purchase> GetAllPurchases()
+        {
+            AddProducts actions = new AddProducts();
+            return actions.GetPurchases();
         }
     }
 }

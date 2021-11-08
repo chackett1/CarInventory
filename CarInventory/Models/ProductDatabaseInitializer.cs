@@ -10,6 +10,7 @@ namespace CarInventory.Models
             GetCategories().ForEach(c => context.Categories.Add(c));
             GetProducts().ForEach(p => context.Products.Add(p));
             GetAppointments().ForEach(z => context.Appointments.Add(z));
+            GetPurchases().ForEach(p => context.Purchases.Add(p));
         }
 
         private static List<Category> GetCategories()
@@ -216,6 +217,19 @@ namespace CarInventory.Models
             };
 
             return appointments;
+        }
+
+        private static List<Purchase> GetPurchases()
+        {
+            var purchases = new List<Purchase> {
+                new Purchase
+                {
+                    purchaseID = 1,
+                    CarName = "Test Car Name",
+                    UnitPrice = 100
+                },
+            };
+            return purchases;
         }
     }
 }
