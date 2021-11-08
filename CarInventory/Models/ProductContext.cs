@@ -11,5 +11,6 @@ namespace CarInventory.Models
         public DbSet<CartItem> ShoppingCartItems { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Purchase> Purchases { get; set; }
+        public DbSet<Sale> Sales { get; set; }
     }
 }

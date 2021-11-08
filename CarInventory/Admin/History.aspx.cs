@@ -24,5 +24,11 @@ namespace CarInventory.Admin
             AddProducts actions = new AddProducts();
             return actions.GetPurchases();
         }
+
+        public List<Sale> GetAllSales()
+        {
+            AddProducts actions = new AddProducts();
+            return actions.GetSales();
+        }
     }
 }

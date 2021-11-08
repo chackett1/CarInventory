@@ -99,6 +99,12 @@ namespace CarInventory.Admin
                 var myItem = (from c in _db.Products where c.ProductID == productId select c).FirstOrDefault();
                 if (myItem != null)
                 {
+                    var mySale = new Sale();
+                    mySale.CarName = myItem.ProductName;
+                    mySale.purchaseID = productId;
+                    mySale.UnitPrice = Convert.ToDouble(myItem.UnitPrice);
+
+                    _db.Sales.Add(mySale);
                     _db.Products.Remove(myItem);
                     _db.SaveChanges();
 
