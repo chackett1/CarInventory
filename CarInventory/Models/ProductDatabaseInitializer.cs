@@ -12,6 +12,7 @@ namespace CarInventory.Models
             GetAppointments().ForEach(z => context.Appointments.Add(z));
             GetPurchases().ForEach(p => context.Purchases.Add(p));
             GetSales().ForEach(s => context.Sales.Add(s));
+            GetExpenses().ForEach(e => context.ExpenseItems.Add(e));
         }
 
         private static List<Category> GetCategories()
@@ -201,6 +202,59 @@ namespace CarInventory.Models
             };
 
             return products;
+        }
+
+        private static List<Expenses> GetExpenses()
+        {
+            var expenseList = new List<Expenses> {
+                new Expenses
+                {
+                    ExpenseId = 1,
+                    ExpenseName = "Vehicle registration fees"
+                },
+                new Expenses
+                {
+                     ExpenseId = 2,
+                    ExpenseName = "Licenses"
+                },
+                new Expenses
+                {
+                    ExpenseId = 3,
+                    ExpenseName = "Gas"
+                },
+                new Expenses
+                {
+                     ExpenseId = 4,
+                    ExpenseName = "Insurance"
+                },
+                new Expenses
+                {
+                    ExpenseId = 5,
+                    ExpenseName = "Repairs"
+                },
+                new Expenses
+                {
+                    ExpenseId = 6,
+                    ExpenseName = "Tires"
+                },
+                new Expenses
+                {
+                    ExpenseId = 7,
+                    ExpenseName = "Oil"
+                },
+                new Expenses
+                {
+                    ExpenseId = 8,
+                    ExpenseName = "Garage rent"
+                },
+                new Expenses
+                {
+                    ExpenseId = 9,
+                    ExpenseName = "Vehicle title"
+                }
+            };
+
+            return expenseList;
         }
 
         private static List<Appointment> GetAppointments()

@@ -13,5 +13,25 @@ namespace CarInventory.Admin
         {
 
         }
+        public IQueryable GetExpenses()
+        {
+            var _db = new CarInventory.Models.ProductContext();
+            IQueryable query = _db.ExpenseItems;
+            return query;
+        }
+
+        public IQueryable GetProducts()
+        {
+            var _db = new CarInventory.Models.ProductContext();
+            IQueryable query = _db.Products;
+            return query;
+        }
+
+        protected void SubmitExpenseButton_Click(object sender, EventArgs e)
+        {
+            //TODO::
+            //Added DB - Table
+            //Need to do save logic
+        }
     }
 }

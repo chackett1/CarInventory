@@ -487,6 +487,7 @@
     <Compile Include="Models\Appointment.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Expenses.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\ProductContext.cs" />
