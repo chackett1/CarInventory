@@ -224,8 +224,19 @@
     </Content>
     <Content Include="Admin\Web.config" />
     <Content Include="Images\Thumbs.db" />
+    <Content Include="Images\Thumbs\2021-Chevrolet-Corvette.jpg" />
+    <Content Include="Images\Thumbs\2021-honda-civic.jpg" />
+    <Content Include="Images\Thumbs\2021-Honda-Odyssey.jpg" />
+    <Content Include="Images\Thumbs\2021-kia-rio.jpg" />
+    <Content Include="Images\Thumbs\2021-mazda-3.jpg" />
+    <Content Include="Images\Thumbs\2021-Toyota-RAV4.jpg" />
+    <Content Include="Images\Thumbs\2021-volkswagen-jetta.jpg" />
+    <Content Include="Images\Thumbs\2022-BMW-230.jpg" />
+    <Content Include="Images\Thumbs\2022-hyundai-accent.jpg" />
+    <Content Include="Images\Thumbs\2022-hyundai-elantra.jpg" />
     <Content Include="Images\Thumbs\Thumbs.db" />
     <Content Include="AppointmentPage.aspx" />
+    <None Include="Properties\PublishProfiles\AutoTracker - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\AutoTracker - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\logo.jpg" />

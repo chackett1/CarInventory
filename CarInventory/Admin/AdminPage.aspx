@@ -50,18 +50,4 @@
     <asp:Button ID="AddProductButton" runat="server" Text="Add Product" OnClick="AddProductButton_Click"  CausesValidation="true"/>
     <asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
     <p></p>
-    <h3>Remove Product:</h3>
-    <table>
-        <tr>
-            <td><asp:Label ID="LabelRemoveProduct" runat="server">Product:</asp:Label></td>
-            <td><asp:DropDownList ID="DropDownRemoveProduct" runat="server" ItemType="CarInventory.Models.Product" 
-                    SelectMethod="GetProducts" AppendDataBoundItems="true" 
-                    DataTextField="ProductName" DataValueField="ProductID" >
-                </asp:DropDownList>
-            </td>
-        </tr>
-    </table>
-    <p></p>
-    <asp:Button ID="RemoveProductButton" runat="server" Text="Remove Product" OnClick="RemoveProductButton_Click" CausesValidation="false"/>
-    <asp:Label ID="LabelRemoveStatus" runat="server" Text=""></asp:Label>
 </asp:Content>

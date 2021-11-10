@@ -18,11 +18,6 @@ namespace CarInventory.Admin
             {
                 LabelAddStatus.Text = "Product added!";
             }
-
-            if (productAction == "remove")
-            {
-                LabelRemoveStatus.Text = "Product removed!";
-            }
         }
 
         protected void AddProductButton_Click(object sender, EventArgs e)
@@ -90,33 +85,6 @@ namespace CarInventory.Admin
             IQueryable query = _db.Products;
             return query;
         }
-
-        protected void RemoveProductButton_Click(object sender, EventArgs e)
-        {
-            using (var _db = new CarInventory.Models.ProductContext())
-            {
-                int productId = Convert.ToInt16(DropDownRemoveProduct.SelectedValue);
-                var myItem = (from c in _db.Products where c.ProductID == productId select c).FirstOrDefault();
-                if (myItem != null)
-                {
-                    var mySale = new Sale();
-                    mySale.CarName = myItem.ProductName;
-                    mySale.purchaseID = productId;
-                    mySale.UnitPrice = Convert.ToDouble(myItem.UnitPrice);
-
-                    _db.Sales.Add(mySale);
-                    _db.Products.Remove(myItem);
-                    _db.SaveChanges();
-
-                    // Reload the page.
-                    string pageUrl = Request.Url.AbsoluteUri.Substring(0, Request.Url.AbsoluteUri.Count() - Request.Url.Query.Count());
-                    Response.Redirect(pageUrl + "?ProductAction=remove");
-                }
-                else
-                {
-                    LabelRemoveStatus.Text = "Unable to locate product.";
-                }
-            }
-        }
+        
     }
 }
