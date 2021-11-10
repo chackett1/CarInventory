@@ -54,149 +54,91 @@ namespace CarInventory.Models
                 new Product
                 {
                     ProductID = 1,
-                    ProductName = "Convertible Car",
-                    Description = "This convertible car is fast! The engine is powered by a neutrino based battery (not included)." +
-                                  "Power it up and let it go!",
-                    ImagePath="car.jpg",
-                    UnitPrice = 22.50,
+                    ProductName = "2021 Honda Civic",
+                    Description = "Honda Civic's are one of the most reliable cars.",
+                    ImagePath="2021-honda-civic.jpg",
+                    UnitPrice = 22265.00,
                     CategoryID = 1
                },
                 new Product
                 {
                     ProductID = 2,
-                    ProductName = "Old-time Car",
-                    Description = "There's nothing old about this toy car, except it's looks. Compatible with other old toy cars.",
-                    ImagePath="carearly.png",
-                    UnitPrice = 15.95,
-                     CategoryID = 1
+                    ProductName = "2021 Kia Rio",
+                    Description = "Kia Rio's are very popular cars.",
+                    ImagePath="2021-kia-rio.jpg",
+                    UnitPrice = 17045.00,
+                    CategoryID = 1
                },
                 new Product
                 {
                     ProductID = 3,
-                    ProductName = "Fast Car",
-                    Description = "Yes this car is fast, but it also floats in water.",
-                    ImagePath="carfast.png",
-                    UnitPrice = 32.99,
+                    ProductName = "2021 Mazda 3",
+                    Description = "Mazada 3's are very popular cars.",
+                    ImagePath="2021-mazda-3.jpg",
+                    UnitPrice = 21645.00,
                     CategoryID = 1
                 },
                 new Product
                 {
                     ProductID = 4,
-                    ProductName = "Super Fast Car",
-                    Description = "Use this super fast car to entertain guests. Lights and doors work!",
-                    ImagePath="carfaster.png",
-                    UnitPrice = 8.95,
+                    ProductName = "2021 Volkswagen Jetta",
+                    Description = "Volkswagen Jetta's are very popular cars.",
+                    ImagePath="2021-volkswagen-jetta.jpg",
+                    UnitPrice = 31990.00,
                     CategoryID = 1
                 },
                 new Product
                 {
                     ProductID = 5,
-                    ProductName = "Old Style Racer",
-                    Description = "This old style racer can fly (with user assistance). Gravity controls flight duration." +
-                                  "No batteries required.",
-                    ImagePath="carracer.png",
-                    UnitPrice = 34.95,
+                    ProductName = "2022 Hyundai Accent",
+                    Description = "Hyundai Accent's are very popular cars.",
+                    ImagePath="2022-hyundai-accent.jpg",
+                    UnitPrice = 17670.00,
                     CategoryID = 1
                 },
                 new Product
                 {
                     ProductID = 6,
-                    ProductName = "Ace Plane",
-                    Description = "Authentic airplane toy. Features realistic color and details.",
-                    ImagePath="planeace.png",
-                    UnitPrice = 95.00,
-                    CategoryID = 2
+                    ProductName = "2022 Hyundai Elantra",
+                    Description = "Hyundai Elantra's are very popular cars.",
+                    ImagePath="2022-hyundai-elantra.jpg",
+                    UnitPrice = 20875.00,
+                    CategoryID = 1
                 },
                 new Product
                 {
                     ProductID = 7,
-                    ProductName = "Glider",
-                    Description = "This fun glider is made from real balsa wood. Some assembly required.",
-                    ImagePath="planeglider.png",
-                    UnitPrice = 4.95,
+                    ProductName = "2022 BMW 230",
+                    Description = "BMW 230's are very fast cars.",
+                    ImagePath="2022-BMW-230.jpg",
+                    UnitPrice = 36350.00,
                     CategoryID = 2
                 },
                 new Product
                 {
                     ProductID = 8,
-                    ProductName = "Paper Plane",
-                    Description = "This paper plane is like no other paper plane. Some folding required.",
-                    ImagePath="planepaper.png",
-                    UnitPrice = 2.95,
-                    CategoryID = 2
+                    ProductName = "2021 Toyota RAV4",
+                    Description = "Toyota RAV4's are very big cars.",
+                    ImagePath="2021-Toyota-RAV4.jpg",
+                    UnitPrice = 22182.00,
+                    CategoryID = 3
                 },
                 new Product
                 {
                     ProductID = 9,
-                    ProductName = "Propeller Plane",
-                    Description = "Rubber band powered plane features two wheels.",
-                    ImagePath="planeprop.png",
-                    UnitPrice = 32.95,
-                    CategoryID = 2
+                    ProductName = "2021 Honda Odyssey",
+                    Description = "Honda Odyssey's are very big cars.",
+                    ImagePath="2021-Honda-Odyssey.jpg",
+                    UnitPrice = 20875.00,
+                    CategoryID = 4
                 },
                 new Product
                 {
                     ProductID = 10,
-                    ProductName = "Early Truck",
-                    Description = "This toy truck has a real gas powered engine. Requires regular tune ups.",
-                    ImagePath="truckearly.png",
-                    UnitPrice = 15.00,
-                    CategoryID = 3
-                },
-                new Product
-                {
-                    ProductID = 11,
-                    ProductName = "Fire Truck",
-                    Description = "You will have endless fun with this one quarter sized fire truck.",
-                    ImagePath="truckfire.png",
-                    UnitPrice = 26.00,
-                    CategoryID = 3
-                },
-                new Product
-                {
-                    ProductID = 12,
-                    ProductName = "Big Truck",
-                    Description = "This fun toy truck can be used to tow other trucks that are not as big.",
-                    ImagePath="truckbig.png",
-                    UnitPrice = 29.00,
-                    CategoryID = 3
-                },
-                new Product
-                {
-                    ProductID = 13,
-                    ProductName = "Big Ship",
-                    Description = "Is it a boat or a ship. Let this floating vehicle decide by using its " +
-                                  "artifically intelligent computer brain!",
-                    ImagePath="boatbig.png",
-                    UnitPrice = 95.00,
-                    CategoryID = 4
-                },
-                new Product
-                {
-                    ProductID = 14,
-                    ProductName = "Paper Boat",
-                    Description = "Floating fun for all! This toy boat can be assembled in seconds. Floats for minutes!" +
-                                  "Some folding required.",
-                    ImagePath="boatpaper.png",
-                    UnitPrice = 4.95,
-                    CategoryID = 4
-                },
-                new Product
-                {
-                    ProductID = 15,
-                    ProductName = "Sail Boat",
-                    Description = "Put this fun toy sail boat in the water and let it go!",
-                    ImagePath="boatsail.png",
-                    UnitPrice = 42.95,
-                    CategoryID = 4
-                },
-                new Product
-                {
-                    ProductID = 16,
-                    ProductName = "Rocket",
-                    Description = "This fun rocket will travel up to a height of 200 feet.",
-                    ImagePath="rocket.png",
-                    UnitPrice = 122.95,
+                    ProductName = "2021 Chevrolet Corvette",
+                    Description = "Chevrolet Corvette's are very fast cars.",
+                    ImagePath="2021-Chevrolet-Corvette.jpg",
+                    UnitPrice = 41845.00,
                     CategoryID = 5
                 }
             };
@@ -280,9 +222,63 @@ namespace CarInventory.Models
                 new Purchase
                 {
                     purchaseID = 1,
-                    CarName = "Test Car Name",
-                    UnitPrice = 100
+                    CarName = "2021 Honda Civic",
+                    UnitPrice = 22265.00
                 },
+                new Purchase
+                {
+                    purchaseID = 2,
+                    CarName = "2021 Kia Rio",
+                    UnitPrice = 17045.00
+                },
+                new Purchase
+                {
+                    purchaseID = 3,
+                    CarName = "2021 Mazda 3",
+                    UnitPrice = 21645.00
+                },
+                new Purchase
+                {
+                    purchaseID = 4,
+                    CarName = "2021 Volkswagen Jetta",
+                    UnitPrice = 31990.00
+                },
+                new Purchase
+                {
+                    purchaseID = 5,
+                    CarName = "2022 Hyundai Accent",
+                    UnitPrice = 17670.00
+                },
+                new Purchase
+                {
+                    purchaseID = 6,
+                    CarName = "2022 Hyundai Elantra",
+                    UnitPrice = 20875.00
+                },
+                new Purchase
+                {
+                    purchaseID = 7,
+                    CarName = "2022 BMW 230",
+                    UnitPrice = 36350.00
+                },
+                new Purchase
+                {
+                    purchaseID = 8,
+                    CarName = "2021 Toyota RAV4",
+                    UnitPrice = 22182.00
+                },
+                new Purchase
+                {
+                    purchaseID = 9,
+                    CarName = "2021 Honda Odyssey",
+                    UnitPrice = 20875.00
+                },
+                new Purchase
+                {
+                    purchaseID = 10,
+                    CarName = "2021 Chevrolet Corvette",
+                    UnitPrice = 41845.00
+                }
             };
             return purchases;
         }
