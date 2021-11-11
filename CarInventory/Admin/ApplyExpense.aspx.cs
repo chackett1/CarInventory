@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CarInventory.Logic;
+using CarInventory.Models;
 
 namespace CarInventory.Admin
 {
@@ -11,7 +13,7 @@ namespace CarInventory.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LabelExpenseStatus.Text = "";
         }
         public IQueryable GetExpenses()
         {
@@ -29,9 +31,13 @@ namespace CarInventory.Admin
 
         protected void SubmitExpenseButton_Click(object sender, EventArgs e)
         {
-            //TODO::
-            //Added DB - Table
-            //Need to do save logic
+            LabelExpenseStatus.Text = "";
+            AddExpenses addExp = new AddExpenses();
+            bool addSuccess = addExp.AddExpense(DropDownAddExpenses.SelectedValue, DropDownAddExpenses.SelectedItem.Text, AddProductPrice.Text, DropDownSelectProduct.SelectedValue);
+            if(addSuccess)
+            {
+                LabelExpenseStatus.Text = "Expense Added Successfully.";
+            }
         }
     }
 }

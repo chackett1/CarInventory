@@ -14,5 +14,6 @@ namespace CarInventory.Models
         public DbSet<Sale> Sales { get; set; }
 
         public DbSet<Expenses> ExpenseItems { get; set; }
+        public DbSet<CarExpense> CarExpenses { get; set; }
     }
 }

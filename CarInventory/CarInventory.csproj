@@ -491,6 +491,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logic\AddExpenses.cs" />
     <Compile Include="Logic\AddProducts.cs" />
     <Compile Include="Logic\AppointmentActions.cs" />
     <Compile Include="Logic\RoleActions.cs" />

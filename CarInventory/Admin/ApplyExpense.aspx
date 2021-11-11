@@ -31,4 +31,5 @@
     </table>
     <p></p>
     <asp:Button ID="SubmitExpenseButton" runat="server" Text="Submit" OnClick="SubmitExpenseButton_Click" CausesValidation="true"/>
+    <asp:Label ID="LabelExpenseStatus" runat="server" Text=""></asp:Label>
 </asp:Content>
