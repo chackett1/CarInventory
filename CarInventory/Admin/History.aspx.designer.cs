@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CarInventory.Admin {
-    
-    
-    public partial class History {
-        
+namespace CarInventory.Admin
+{
+
+
+    public partial class History
+    {
+
         /// <summary>
         /// Div1 control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CarInventory.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl Div1;
-        
+
         /// <summary>
         /// GridView1 control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace CarInventory.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView GridView1;
-        
+
         /// <summary>
         /// AppointmentTitle control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace CarInventory.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl AppointmentTitle;
-        
+
         /// <summary>
         /// AppointmentList control.
         /// </summary>
@@ -47,5 +49,23 @@ namespace CarInventory.Admin {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView AppointmentList;
+
+        /// <summary>
+        /// ExpensesTitle control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl ExpensesTitle;
+
+        /// <summary>
+        /// ExpenseList control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView ExpenseList;
     }
 }

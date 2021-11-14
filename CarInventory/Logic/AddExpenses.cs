@@ -10,14 +10,13 @@ namespace CarInventory.Logic
     {
         private ProductContext _db = new ProductContext();
 
-        public bool AddExpense(string expenseId, string expenseName, string price, string productId)
+        public bool AddExpense(string expenseId, string expenseName, string price, string productName)
         {
             var expense = new CarExpense();
             expense.ExpenseId = Convert.ToInt32(expenseId);
             expense.ExpenseName = expenseName;
             expense.Price = Convert.ToDouble(price);
-            expense.ProductId = Convert.ToInt32(expenseId);
-           
+            expense.ProductName = productName;
             using (ProductContext _db = new ProductContext())
             {
                 // Add expense to DB.

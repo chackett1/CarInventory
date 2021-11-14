@@ -41,5 +41,10 @@ namespace CarInventory.Logic
         {
             return _db.Sales.ToList();
         }
+
+        public List<CarExpense> GetExpenses()
+        {
+            return _db.CarExpenses.ToList();
+        }
     }
 }

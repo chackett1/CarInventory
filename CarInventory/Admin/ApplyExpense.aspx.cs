@@ -33,7 +33,7 @@ namespace CarInventory.Admin
         {
             LabelExpenseStatus.Text = "";
             AddExpenses addExp = new AddExpenses();
-            bool addSuccess = addExp.AddExpense(DropDownAddExpenses.SelectedValue, DropDownAddExpenses.SelectedItem.Text, AddProductPrice.Text, DropDownSelectProduct.SelectedValue);
+            bool addSuccess = addExp.AddExpense(DropDownAddExpenses.SelectedValue, DropDownAddExpenses.SelectedItem.Text, AddProductPrice.Text, DropDownSelectProduct.SelectedItem.Text);
             if(addSuccess)
             {
                 LabelExpenseStatus.Text = "Expense Added Successfully.";

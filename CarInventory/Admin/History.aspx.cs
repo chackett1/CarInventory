@@ -30,5 +30,11 @@ namespace CarInventory.Admin
             AddProducts actions = new AddProducts();
             return actions.GetSales();
         }
+
+        public List<CarExpense> GetAllExpenses()
+        {
+            AddProducts actions = new AddProducts();
+            return actions.GetExpenses();
+        }
     }
 }

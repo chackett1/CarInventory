@@ -21,4 +21,14 @@
             <asp:BoundField DataField="UnitPrice" HeaderText="Unit Price" /> 
             </Columns>    
         </asp:GridView>
+     <div id="ExpensesTitle" runat="server" class="ContentHead"><h1>Expenses</h1></div>
+        <asp:GridView ID="ExpenseList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="Vertical" CellPadding="4"
+            ItemType="CarInventory.Models.CarExpense" SelectMethod="GetAllExpenses" 
+            CssClass="table table-striped table-bordered" >   
+            <Columns>
+            <asp:BoundField DataField="ProductName" HeaderText="Car Name" SortExpression="ProductName" />        
+            <asp:BoundField DataField="ExpenseName" HeaderText="Expense" />   
+            <asp:BoundField DataField="Price" HeaderText="Price" /> 
+            </Columns>    
+        </asp:GridView>
 </asp:Content>
