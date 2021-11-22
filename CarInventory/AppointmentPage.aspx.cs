@@ -14,6 +14,9 @@ namespace CarInventory
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string productName = Request.QueryString["productName"];
+            Vehicle.Text = productName;
+
             string appointmentAction = Request.QueryString["AppointmentAction"];
             if (appointmentAction == "success")
             {

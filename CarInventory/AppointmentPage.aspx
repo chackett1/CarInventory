@@ -1,7 +1,9 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AppointmentPage.aspx.cs" Inherits="CarInventory.AppointmentPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <asp:Label ID="LabelSubmitStatus" Runat="server" Text=""></asp:Label>
+    <div style="margin-left: auto; margin-right: auto; text-align: center;">
+    <asp:Label ID="LabelSubmitStatus" Runat="server" Text="" Font-Bold="true" Font-Size="X-Large"></asp:Label>
+    </div>
     <body>
         <br />
         <br />

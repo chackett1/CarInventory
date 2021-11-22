@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CarInventory {
-    
-    
-    public partial class ProductList {
-        
+namespace CarInventory
+{
+
+
+    public partial class ProductList
+    {
+
         /// <summary>
         /// categoryList control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace CarInventory {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListView categoryList;
-        
+
         /// <summary>
         /// productList control.
         /// </summary>

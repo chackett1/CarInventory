@@ -21,7 +21,7 @@
                         <br />
                         <span><b>Product Number:</b>&nbsp;<%#:Item.ProductID %></span>
                         <br />
-                        <a href="/AppointmentPage.aspx?productID=<%#:Item.ProductID %>">               
+                        <a href="/AppointmentPage.aspx?productName=<%#:Item.ProductName %>">               
                                         <span class="ProductListItem">
                                             <b>Schedule an Appointment<b>
                                         </span>           

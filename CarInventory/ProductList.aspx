@@ -6,8 +6,6 @@
             <hgroup>
                 <h2><%: Page.Title %></h2>
             </hgroup>
-
-            <h2>Filter By Category</h2>
             
         <div id="CategoryMenu" style="text-align: center">       
             <asp:ListView ID="categoryList"  
@@ -15,7 +13,7 @@
                 runat="server"
                 SelectMethod="GetCategories" >
                 <ItemTemplate>
-                    <b style="font-size: large; font-style: normal">
+                    <b style="font-size: x-large; font-style: normal">
                         <a href="/ProductList.aspx?id=<%#: Item.CategoryID %>">
                         <%#: Item.CategoryName %>
                         </a>
@@ -25,6 +23,8 @@
             </asp:ListView>
         </div>
 
+        &nbsp;
+          
             <asp:ListView ID="productList" runat="server" 
                 DataKeyNames="ProductID" GroupItemCount="4"
                 ItemType="CarInventory.Models.Product" SelectMethod="GetProducts">
