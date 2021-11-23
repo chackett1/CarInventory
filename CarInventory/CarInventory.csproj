@@ -204,6 +204,7 @@
     <Content Include="Admin\AdminAppointment.aspx" />
     <Content Include="Admin\ApplyExpense.aspx" />
     <Content Include="Admin\AppointmentDetails.aspx" />
+    <Content Include="Admin\AdminArchivedAppointment.aspx" />
     <Content Include="Admin\CreateAccount.aspx" />
     <Content Include="Admin\History.aspx" />
     <Content Include="Admin\Reports.aspx" />
@@ -434,6 +435,13 @@
     </Compile>
     <Compile Include="Admin\AppointmentDetails.aspx.designer.cs">
       <DependentUpon>AppointmentDetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminArchivedAppointment.aspx.cs">
+      <DependentUpon>AdminArchivedAppointment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminArchivedAppointment.aspx.designer.cs">
+      <DependentUpon>AdminArchivedAppointment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\CreateAccount.aspx.cs">
       <DependentUpon>CreateAccount.aspx</DependentUpon>

@@ -23,6 +23,7 @@
                         <span><b>Customer Message:</b><br /><%#:Item.CustomerMessage%> </span>
                         <br />
                         <br />
+                        <asp:Button ID="ArchiveButton" runat="server" Text="Archive" OnClick=" ArchiveButton_Click"/>
                     </td>
                 </tr>
             </table>

@@ -1,6 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminAppointment.aspx.cs" Inherits="CarInventory.Admin.AdminAppointment" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
         <div id="AppointmentTitle" runat="server" class="ContentHead"><h1>Appointments</h1></div>
+        <div> <a href='AdminArchivedAppointment.aspx'>View Archived Appointments </a> </div>
         <asp:GridView ID="AppointmentList" runat="server" AutoGenerateColumns="False" ShowFooter="True" GridLines="Vertical" CellPadding="4"
         ItemType="CarInventory.Models.Appointment" SelectMethod="GetAllAppointments" 
         CssClass="table table-striped table-bordered" >   
@@ -10,7 +11,7 @@
         <asp:BoundField DataField="CustomerEmail" HeaderText="Email" /> 
         <asp:BoundField DataField="DesiredVehicle" HeaderText="Desired Vehicle(s)" />  
         <asp:BoundField DataField="CustomerMessage" HeaderText="Customer Message" /> 
-         <asp:BoundField DataField="AppointmentID" HtmlEncode="False" DataFormatString="<a target='_blank' href='AppointmentDetails.aspx?appointmentID={0}'>View/Add Comments</a>" />
+        <asp:BoundField DataField="AppointmentID" HtmlEncode="False" DataFormatString="<a target='_blank' href='AppointmentDetails.aspx?appointmentID={0}'>View/Add Comments</a>" />
         </Columns>    
     </asp:GridView>
 </asp:Content>
