@@ -10,6 +10,7 @@ namespace CarInventory.Models
             GetCategories().ForEach(c => context.Categories.Add(c));
             GetProducts().ForEach(p => context.Products.Add(p));
             GetAppointments().ForEach(z => context.Appointments.Add(z));
+            GetArchivedAppointments().ForEach(z => context.ArchivedAppointments.Add(z));
             GetPurchases().ForEach(p => context.Purchases.Add(p));
             GetSales().ForEach(s => context.Sales.Add(s));
             GetExpenses().ForEach(e => context.ExpenseItems.Add(e));
@@ -211,6 +212,23 @@ namespace CarInventory.Models
                     CustomerMessage = "Please contact me, I'd love to book an appointment to view this car sometime next week."
                 },
                 
+            };
+
+            return appointments;
+        }
+
+        private static List<ArchivedAppointment> GetArchivedAppointments()
+        {
+            var appointments = new List<ArchivedAppointment> {
+                new ArchivedAppointment
+                {
+                    ArchivedAppointmentID = 2,
+                    ArchivedCustomerName = "Henriett Jones",
+                    ArchivedCustomerEmail = "henriettjones@gmail.com",
+                    ArchivedDesiredVehicle = "Ford Mustang 2021",
+                    ArchivedCustomerMessage = "Please contact me, I'd love to book an appointment to view this car sometime next week."
+                },
+
             };
 
             return appointments;

@@ -195,14 +195,8 @@ namespace CarInventory.Logic
 
         public int GetCount()
         {
-            ShoppingCartId = GetCartId();
-
-            // Get the count of each item in the cart and sum them up          
-            int? count = (from cartItems in _db.ShoppingCartItems
-                          where cartItems.CartId == ShoppingCartId
-                          select (int?)cartItems.Quantity).Sum();
-            // Return 0 if all entries are null         
-            return count ?? 0;
+            ShoppingCartId = GetCartId();   
+            return  0;
         }
 
         public struct ShoppingCartUpdates
