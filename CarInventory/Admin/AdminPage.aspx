@@ -2,7 +2,31 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Administration</h1>
     <hr />
-    <a runat="server" href="~/Admin/AdminAppointment">Appointments</a>
+    <h3>Optional VIN Lookup:</h3>
+    <p>Example Input: 2008 WBAWC73578E067076</p>
+    <p>Example Input: 2005 1FMYU92ZX5KD13670</p>
+    <p>Example Input: 2005 1FMZK05135GAGG488</p>
+    <p>Example Input: 2001 JTDBT123710161315</p>
+    <br />
+    <table>
+        <tr>
+            <td>
+                <span>Model Year:</span>
+            </td>
+            <td>
+                <input ID="modelYearInput" runat="server"/>
+            </td>
+       </tr>
+        <tr>
+            <td>
+                <span>Vehicle Identification Number:</span>
+            </td>
+            <td>
+                <input ID="vinInput" runat="server"/>
+            </td>
+       </tr>
+    </table>
+    <button type="button" runat="server" ID="Button1" OnServerClick="VinLookup_Click" CausesValidation="False">VIN Lookup</button>
     <h3>Add Product:</h3>
     <table>
         <tr>
@@ -47,7 +71,7 @@
     </table>
     <p></p>
     <p></p>
-    <asp:Button ID="AddProductButton" runat="server" Text="Add Product" OnClick="AddProductButton_Click"  CausesValidation="true"/>
+    <asp:Button ID="AddProductButton" runat="server" Text="Add Product" OnClick="AddProductButton_Click"  CausesValidation="true" value="submit"/>
     <asp:Label ID="LabelAddStatus" runat="server" Text=""></asp:Label>
     <p></p>
 </asp:Content>
