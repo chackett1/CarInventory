@@ -89,7 +89,7 @@ namespace CarInventory.Admin
         {
 
             Boolean fileOK = false;
-            String path = Server.MapPath("~/Catalog/Images/");
+            String path = Server.MapPath("~/Images/");
             if (ProductImage.HasFile)
             {
                 String fileExtension = System.IO.Path.GetExtension(ProductImage.FileName).ToLower();
