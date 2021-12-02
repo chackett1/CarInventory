@@ -54,11 +54,19 @@
             </td>
         </tr>
         <tr>
-            <td><asp:Label ID="LabelAddPrice" runat="server">Price:</asp:Label></td>
+            <td><asp:Label ID="LabelAddPrice" runat="server">Selling Price:</asp:Label></td>
             <td>
                 <asp:TextBox ID="AddProductPrice" runat="server"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" Text="* Price required." ControlToValidate="AddProductPrice" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" Text="* Must be a valid price without $." ControlToValidate="AddProductPrice" SetFocusOnError="True" Display="Dynamic" ValidationExpression="^[0-9]*(\.)?[0-9]?[0-9]?$"></asp:RegularExpressionValidator>
+            </td>
+        </tr>
+        <tr>
+            <td><asp:Label ID="LabelAddPriceDealership" runat="server">Purchase Price:</asp:Label></td>
+            <td>
+                <asp:TextBox ID="AddProductPriceDealership" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" Text="* Price required." ControlToValidate="AddProductPriceDealership" SetFocusOnError="true" Display="Dynamic"></asp:RequiredFieldValidator>
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" Text="* Must be a valid price without $." ControlToValidate="AddProductPrice" SetFocusOnError="True" Display="Dynamic" ValidationExpression="^[0-9]*(\.)?[0-9]?[0-9]?$"></asp:RegularExpressionValidator>
             </td>
         </tr>
         <tr>

@@ -10,18 +10,19 @@ namespace CarInventory.Logic
     {
         private ProductContext _db = new ProductContext();
 
-        public bool AddProduct(string ProductName, string ProductDesc, string ProductPrice, string ProductCategory, string ProductImagePath)
+        public bool AddProduct(string ProductName, string ProductDesc, string ProductPrice, string ProductPriceDealership, string ProductCategory, string ProductImagePath)
         {
             var myProduct = new Product();
             myProduct.ProductName = ProductName;
             myProduct.Description = ProductDesc;
             myProduct.UnitPrice = Convert.ToDouble(ProductPrice);
+            myProduct.UnitPriceDealership = Convert.ToDouble(ProductPriceDealership);
             myProduct.ImagePath = ProductImagePath;
             myProduct.CategoryID = Convert.ToInt32(ProductCategory);
 
             var myPurchase = new Purchase();
             myPurchase.CarName = ProductName;
-            myPurchase.UnitPrice = Convert.ToDouble(ProductPrice);
+            myPurchase.UnitPrice = Convert.ToDouble(ProductPriceDealership);
 
             using (ProductContext _db = new ProductContext())
             {

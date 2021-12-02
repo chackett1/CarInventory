@@ -59,6 +59,7 @@ namespace CarInventory.Models
                     Description = "Honda Civic's are one of the most reliable cars.",
                     ImagePath="2021-honda-civic.jpg",
                     UnitPrice = 22265.00,
+                    UnitPriceDealership = 20000.00,
                     CategoryID = 1
                },
                 new Product
@@ -68,6 +69,7 @@ namespace CarInventory.Models
                     Description = "Kia Rio's are very popular cars.",
                     ImagePath="2021-kia-rio.jpg",
                     UnitPrice = 17045.00,
+                    UnitPriceDealership = 10000.00,
                     CategoryID = 1
                },
                 new Product
@@ -77,6 +79,7 @@ namespace CarInventory.Models
                     Description = "Mazada 3's are very popular cars.",
                     ImagePath="2021-mazda-3.jpg",
                     UnitPrice = 21645.00,
+                    UnitPriceDealership = 20000.00,
                     CategoryID = 1
                 },
                 new Product
@@ -86,6 +89,7 @@ namespace CarInventory.Models
                     Description = "Volkswagen Jetta's are very popular cars.",
                     ImagePath="2021-volkswagen-jetta.jpg",
                     UnitPrice = 31990.00,
+                    UnitPriceDealership = 30000.00,
                     CategoryID = 1
                 },
                 new Product
@@ -95,6 +99,7 @@ namespace CarInventory.Models
                     Description = "Hyundai Accent's are very popular cars.",
                     ImagePath="2022-hyundai-accent.jpg",
                     UnitPrice = 17670.00,
+                    UnitPriceDealership = 10000.00,
                     CategoryID = 1
                 },
                 new Product
@@ -104,6 +109,7 @@ namespace CarInventory.Models
                     Description = "Hyundai Elantra's are very popular cars.",
                     ImagePath="2022-hyundai-elantra.jpg",
                     UnitPrice = 20875.00,
+                    UnitPriceDealership = 20000.00,
                     CategoryID = 1
                 },
                 new Product
@@ -113,6 +119,7 @@ namespace CarInventory.Models
                     Description = "BMW 230's are very fast cars.",
                     ImagePath="2022-BMW-230.jpg",
                     UnitPrice = 36350.00,
+                    UnitPriceDealership = 20000.00,
                     CategoryID = 2
                 },
                 new Product
@@ -122,6 +129,7 @@ namespace CarInventory.Models
                     Description = "Toyota RAV4's are very big cars.",
                     ImagePath="2021-Toyota-RAV4.jpg",
                     UnitPrice = 22182.00,
+                    UnitPriceDealership = 20000.00,
                     CategoryID = 3
                 },
                 new Product
@@ -131,6 +139,7 @@ namespace CarInventory.Models
                     Description = "Honda Odyssey's are very big cars.",
                     ImagePath="2021-Honda-Odyssey.jpg",
                     UnitPrice = 20875.00,
+                    UnitPriceDealership = 20000.00,
                     CategoryID = 4
                 },
                 new Product
@@ -140,6 +149,7 @@ namespace CarInventory.Models
                     Description = "Chevrolet Corvette's are very fast cars.",
                     ImagePath="2021-Chevrolet-Corvette.jpg",
                     UnitPrice = 41845.00,
+                    UnitPriceDealership = 30000.00,
                     CategoryID = 5
                 }
             };
@@ -241,61 +251,61 @@ namespace CarInventory.Models
                 {
                     purchaseID = 1,
                     CarName = "2021 Honda Civic",
-                    UnitPrice = 22265.00
+                    UnitPrice = 20000.00
                 },
                 new Purchase
                 {
                     purchaseID = 2,
                     CarName = "2021 Kia Rio",
-                    UnitPrice = 17045.00
+                    UnitPrice = 10000.00
                 },
                 new Purchase
                 {
                     purchaseID = 3,
                     CarName = "2021 Mazda 3",
-                    UnitPrice = 21645.00
+                    UnitPrice = 20000.00
                 },
                 new Purchase
                 {
                     purchaseID = 4,
                     CarName = "2021 Volkswagen Jetta",
-                    UnitPrice = 31990.00
+                    UnitPrice = 30000.00
                 },
                 new Purchase
                 {
                     purchaseID = 5,
                     CarName = "2022 Hyundai Accent",
-                    UnitPrice = 17670.00
+                    UnitPrice = 10000.00
                 },
                 new Purchase
                 {
                     purchaseID = 6,
                     CarName = "2022 Hyundai Elantra",
-                    UnitPrice = 20875.00
+                    UnitPrice = 20000.00
                 },
                 new Purchase
                 {
                     purchaseID = 7,
                     CarName = "2022 BMW 230",
-                    UnitPrice = 36350.00
+                    UnitPrice = 30000.00
                 },
                 new Purchase
                 {
                     purchaseID = 8,
                     CarName = "2021 Toyota RAV4",
-                    UnitPrice = 22182.00
+                    UnitPrice = 20000.00
                 },
                 new Purchase
                 {
                     purchaseID = 9,
                     CarName = "2021 Honda Odyssey",
-                    UnitPrice = 20875.00
+                    UnitPrice = 20000.00
                 },
                 new Purchase
                 {
                     purchaseID = 10,
                     CarName = "2021 Chevrolet Corvette",
-                    UnitPrice = 41845.00
+                    UnitPrice = 30000.00
                 }
             };
             return purchases;
