@@ -15,7 +15,11 @@ namespace CarInventory
         protected void Page_Load(object sender, EventArgs e)
         {
             string productName = Request.QueryString["productName"];
-            Vehicle.Text = productName;
+            System.Diagnostics.Debug.WriteLine(productName);
+            if (productName != null)
+            {
+                Vehicle.Text = productName;
+            }
 
             string appointmentAction = Request.QueryString["AppointmentAction"];
             if (appointmentAction == "success")
@@ -34,6 +38,7 @@ namespace CarInventory
 
             // Add Customer Appointmnet/Message to Database
             AppointmentActions appointments = new AppointmentActions();
+            System.Diagnostics.Debug.WriteLine(Name.Text + Email.Text + Vehicle.Text + Message.Text);
             bool addSuccess = appointments.AddAppointment(Name.Text, Email.Text,
                 Vehicle.Text, Message.Text);
 
